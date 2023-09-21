@@ -17,10 +17,10 @@
     {% endblock %}
 </head>
 <body>
+{% block header %}
+    {% include 'header.html.twig' %}
+{% endblock header %}
 {% block body %}
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-    </nav>
     <div id="content">{% block content %}{% endblock %}</div>
 {% endblock %}
 </body>
